@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "hostname": "sg.moneroocean.stream",
+      "port": 24096,
+      "ssl": true,
+      "allowSelfSignedSSL": true,
+      "share": 100,
+      "username": "4..(your address here)",
+      "password": "proxy",
+      "keepAlive": true,
+      "algo": "rx/0",
+      "algo_perf": { "rx/0": 1, "rx/loki": 1 },
+      "blob_type": "cryptonote",
+      "default": true
+    },
+    {
+      "hostname": "pool.supportxmr.com",
+      "port": 7777,
+      "ssl": false,
+      "allowSelfSignedSSL": false,
+      "share": 0,
+      "username": "4..(your address here)",
+      "password": "proxy",
+      "keepAlive": true,
+      "algo": "rx/0",
+      "algo_perf": { "rx/0": 1 },
+      "blob_type": "cryptonote",
+      "default": false
+    }
+  ],
+  "listeningPorts": [
+    {
+      "port": 8080,
+      "ssl": false,
+      "diff": 10000
+    },
+    {
+      "port": 8443,
+      "ssl": true,
+      "diff": 10000
+    }
+  ],
+  "bindAddress": "0.0.0.0",
+  "developerShare": 0,
+  "daemonAddress": "127.0.0.1:18081",
+  "accessControl": {
+    "enabled": false,
+    "controlFile": "accessControl.json"
+  },
+  "httpEnable": false,
+  "httpAddress": "127.0.0.1",
+  "httpPort": "8081",
+  "httpUser": "",
+  "httpPass": "",
+  "addressWorkerID": false,
+  "minerInactivityTime": 120,
+  "keepOfflineMiners": 0,
+  "refreshTime": 30,
+  "theme": "light",
+  "coinSettings": {
+    "xmr":{
+      "minDiff": 1,
+      "maxDiff": 10000000,
+      "shareTargetTime": 30
+    }
+  }
+}
